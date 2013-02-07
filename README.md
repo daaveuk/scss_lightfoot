@@ -17,13 +17,13 @@ Currently, all the scss is located in the scss/_grid.scss file. It would be rela
 
 The Grid works similar to the 960.gs grid and employs a fixed width container object and 12 grid sizes defined as 'blocks'. By default, a grid can be created using the Grid classes, which are labeled 01-12. The last block on the grid is defined by a suffix to the class name, ie .block12_last. An example would be:
 
-><div class="container">
->	<div class="block05">
->		<p>Content goes here</p>	
->	</div>
->	<div class="block07_last">
->	</div>
-></div>
+	<div class="container">
+		<div class="block05">
+			<p>Content goes here</p>	
+	</div>
+		<div class="block07_last">
+		</div>
+	</div>
 
 This would create a grid with two blocks, the first using 5 'grids' and the second using 7.
 
@@ -31,19 +31,19 @@ This works a lot like most grid systems, but I find it results in very ugly html
 
 An example in your scss file would be:
 
->#blogContainer {
->	@extend .block05;
->}
+	#blogContainer {
+		@extend .block05;
+	}
 
 An example of your html would be:
 
-><div class="container">
->	<div id="blogContainer">
->		<p>Content goes here</p>	
->	</div>
->	<div class="block07_last">
->	</div>
-></div>
+	<div class="container">
+		<div id="blogContainer">
+			<p>Content goes here</p>	
+		</div>
+		<div class="block07_last">
+		</div>
+	</div>
 
 It's that simple!
 
