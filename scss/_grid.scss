@@ -1,0 +1,146 @@
+//scss_lightfoot - A quick and powerful grid system that employs scss to minimise 'tag soup'.
+//Created by David Henderson (daave.co.uk)
+
+
+//variables
+
+//Columns
+$columns: 12;
+
+//Full Desktop Width
+$fdw-container: 1280px;
+$fdw-gutter: 40px;
+$fdw-column: round(($fdw-container / $columns) - $fdw-gutter);
+$fdw-content: round((($fdw-column + $fdw-gutter) * $columns) - $fdw-gutter);
+
+//Reduced Desktop Width
+$rdw-container: 960px;
+$rdw-gutter: 20px;
+$rdw-column: round(($rdw-container / $columns) - $rdw-gutter);
+$rdw-content: round((($rdw-column + $rdw-gutter) * $columns) - $rdw-gutter);
+
+//Tablet Width
+$tablet-container: 800px;
+$tablet-gutter: 20px;
+$tablet-column: round(($tablet-container / $columns) - $tablet-gutter);
+$tablet-content: round((($tablet-column + $tablet-gutter) * $columns) - $tablet-gutter);
+
+//Mobile Width
+$mobile-container: 480px;
+$mobile-gutter: 20px;
+$mobile-column: round(($mobile-container / $columns) - $mobile-gutter);
+$mobile-content: round((($mobile-column + $mobile-gutter) * $columns) - $mobile-gutter);
+
+//Styles
+$border-width: 0px;
+$border-colour: #47D9BF;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color:#003056;
+}
+
+
+@mixin block_init($container, $column-width, $gutter) {
+	.container {
+		width:$container;
+		margin:0 auto;
+		padding-top: $gutter / 2;
+		padding-bottom: $gutter / 2;
+		padding-left: $gutter;
+		background-color:#04518C;
+		clear:both;
+	}
+	.container:after { 
+		 	content: "."; 
+		 	visibility: hidden; 
+			display: block; 
+		 	height: 0; 
+		 	clear: both;
+	}
+	.block12, .block11, .block10, .block09, .block08, .block07, .block06, .block05, .block04, .block03, .block02, .block01 {	
+		margin-right: $gutter;
+	}
+
+	.block12_last, .block11_last, .block10_last, .block09_last, .block08_last, .block07_last, .block06_last, .block05_last, .block04_last, .block03_last, .block02_last, .block01_last, .block12, .block11, .block10, .block09, .block08, .block07, .block06, .block05, .block04, .block03, .block02, .block01 {
+		height:60px;
+		line-height:60px;
+		background-color: #00A1D9;
+		text-align:center;
+		float:left;
+		margin-top: $gutter / 2;
+		margin-bottom: $gutter / 2;
+	 	-moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box;
+		border:$border-width solid $border-colour;
+	}
+
+	.block12, .block12_last	{
+		width: ($column-width  * 12) + ($gutter * 11);		
+	}
+
+	.block11, .block11_last	{
+		width: ($column-width  * 11) + ($gutter * 10);
+	}
+
+	.block10, .block10_last	{
+		width: ($column-width  * 10) + ($gutter * 9);
+	}
+
+	.block09, .block09_last	{
+		width: ($column-width  * 9) + ($gutter * 8);
+	}
+
+	.block08, .block08_last	{
+		width: ($column-width  * 8) + ($gutter * 7);
+	}
+
+	.block07, .block07_last	{
+		width: ($column-width  * 7) + ($gutter * 6);
+	}
+
+	.block06, .block06_last	{
+		width: ($column-width  * 6) + ($gutter * 5);
+	}
+
+	.block05, .block05_last	{	
+		width: ($column-width  * 5) + ($gutter * 4);
+	}
+
+	.block04, .block04_last	{
+		width: ($column-width  * 4) + ($gutter * 3);
+	}
+
+	.block03, .block03_last	{
+		width: ($column-width  * 3) + ($gutter * 2);
+	}
+
+	.block02, .block02_last	{
+		width: ($column-width  * 2) + ($gutter * 1);
+	}
+
+	.block01, .block01_last	{
+		width: $column-width;
+	}
+}
+
+@media (min-width:$mobile-container) {
+	@include block_init($mobile-container,$mobile-column, $mobile-gutter)
+}
+
+@media (min-width:$tablet-container) {
+	@include block_init($tablet-container,$tablet-column, $tablet-gutter)
+}
+
+@media (min-width:$rdw-container) {
+	@include block_init($rdw-container,$rdw-column, $rdw-gutter)
+}
+
+@media (min-width:$fdw-container) {
+	@include block_init($fdw-container,$fdw-column, $fdw-gutter)
+}

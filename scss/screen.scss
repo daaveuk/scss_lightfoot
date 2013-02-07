@@ -1,0 +1,11 @@
+@import "compass/reset";
+@import "grid";
+
+#Blog {
+	@extend .block08;
+	background-color:red;
+}
+
+#Sidebar {
+	@extend .block04_last;
+}
