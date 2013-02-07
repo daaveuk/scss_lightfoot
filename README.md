@@ -6,9 +6,9 @@ scss_lightfoot - A quick and powerful grid system that employs scss to minimise 
 Requirements
 ------------
 
-Sass	(http://sass-lang.com/)
-Compass (http://compass-style.org/)
-A Text Editor
+- Sass	(http://sass-lang.com/)
+- Compass (http://compass-style.org/)
+- A Text Editor
 
 Installation & Usage
 --------------------
@@ -52,10 +52,11 @@ It's also responsive, currently it targets 4 resolutions, all of which is config
 Bugs
 ----
 - Responsiveness breaks (easy fix)
-- Border variables 'half implimented' 
+- Border variables 'half implimented'
 
 Changelog
 ---------
+- 070213 - Built example blog layout to serve as a better example, cleaned up scss files to remove formatting from _grid.scss from prototyping
 - 070213 - Intial Version Release
 
 License
