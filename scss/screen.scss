@@ -1,19 +1,6 @@
 @import "compass/reset";
 @import "grid";
 
-//Columns
-$columns: 12;
-
-//Full Display
-$fdw-container: 1280px;
-$fdw-gutter: 40px;
-$fdw-column: round(($fdw-container / $columns) - $fdw-gutter);
-
-//Mobile
-$mobile-container: 480px;
-$mobile-gutter: 40px;
-$mobile-column: round(($mobile-container / $columns) - $mobile-gutter);
-
 //Styles
 $border-width: 0px;
 $border-colour: #47D9BF;
@@ -71,6 +58,7 @@ $double-line-height: $line-height * 2;
 		@include block_init($column, 8, $gutter);
 		margin-top: $line-height;
 		margin-bottom: $line-height;
+
 	}
 
 	#blogPost	{
@@ -161,7 +149,27 @@ $double-line-height: $line-height * 2;
 				margin-bottom:$line-height;
 			}
 	}
+
+	.block12 {
+			@include block_last_init($column, 12, $gutter);
+			border:solid 1px black;
+	}
+	.sub_block01 {
+			@include sub_block_init(4, $column, 12, $gutter);
+	}
+	.sub_block01_last {
+			@include sub_block_last_init(4, $column, 12, $gutter);
+	}
+	.sub_block02 {
+			@include sub_block_init(2, $column, 12, $gutter);	
+	}
+	.sub_block02_last {
+			@include sub_block_last_init(2, $column, 12, $gutter);	
+	}
+	
+
 }
+
 
 @media only screen and (min-width: $mobile-container) {
 	@include layout($mobile-container, $mobile-gutter, $mobile-column);
@@ -170,5 +178,4 @@ $double-line-height: $line-height * 2;
 @media only screen and (min-width: $fdw-container) {
 	@include layout($fdw-container, $fdw-gutter, $fdw-column);
 }
-
 

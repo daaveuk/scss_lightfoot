@@ -46,7 +46,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   #blogSocial { width: 120px; float: left; margin-top: 20px; margin-bottom: 20px; margin-right: 40px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
   #blogSocial li { font-size: 14px; line-height: 21px; margin-bottom: 21px; list-style: none; }
   #blogLicence { width: 120px; float: left; margin-top: 20px; margin-bottom: 20px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-  #blogLicence p { font-size: 14px; line-height: 21px; margin-bottom: 21px; } }
+  #blogLicence p { font-size: 14px; line-height: 21px; margin-bottom: 21px; }
+  .block12 { width: 440px; float: left; margin-top: 20px; margin-bottom: 20px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: solid 1px black; }
+  .sub_block01 { width: 59px; float: left; margin-top: 20px; margin-bottom: 20px; margin-left: 40px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid black; }
+  .sub_block01_last { width: 59px; float: left; margin-top: 20px; margin-bottom: 20px; margin-left: 40px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid black; }
+  .sub_block02 { width: 159px; float: left; margin-top: 20px; margin-bottom: 20px; margin-left: 40px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid black; }
+  .sub_block02_last { width: 159px; float: left; margin-top: 20px; margin-bottom: 20px; margin-left: 40px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid black; } }
 @media only screen and (min-width: 1280px) { #blogHeader { width: 1280px; margin: 0 auto; padding-top: 20px; padding-bottom: 20px; padding-left: 40px; clear: both; border: 1px solid #ddd; }
   #blogHeader:after { content: "."; visibility: hidden; display: block; height: 0; clear: both; }
   #blogTitle { width: 1244px; float: left; margin-top: 20px; margin-bottom: 20px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -76,4 +81,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   #blogSocial { width: 388px; float: left; margin-top: 20px; margin-bottom: 20px; margin-right: 40px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
   #blogSocial li { font-size: 14px; line-height: 21px; margin-bottom: 21px; list-style: none; }
   #blogLicence { width: 388px; float: left; margin-top: 20px; margin-bottom: 20px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-  #blogLicence p { font-size: 14px; line-height: 21px; margin-bottom: 21px; } }
+  #blogLicence p { font-size: 14px; line-height: 21px; margin-bottom: 21px; }
+  .block12 { width: 1244px; float: left; margin-top: 20px; margin-bottom: 20px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: solid 1px black; }
+  .sub_block01 { width: 260px; float: left; margin-top: 20px; margin-bottom: 20px; margin-left: 40px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid black; }
+  .sub_block01_last { width: 260px; float: left; margin-top: 20px; margin-bottom: 20px; margin-left: 40px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid black; }
+  .sub_block02 { width: 561px; float: left; margin-top: 20px; margin-bottom: 20px; margin-left: 40px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid black; }
+  .sub_block02_last { width: 561px; float: left; margin-top: 20px; margin-bottom: 20px; margin-left: 40px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid black; } }

@@ -5,8 +5,23 @@
 	padding: 0;
 }
 
+//Columns
+$columns: 12;
+
+//Full Display
+$fdw-container: 1280px;
+$fdw-gutter: 40px;
+$fdw-column: round(($fdw-container / $columns) - $fdw-gutter);
+
+//Mobile
+$mobile-container: 480px;
+$mobile-gutter: 40px;
+$mobile-column: round(($mobile-container / $columns) - $mobile-gutter);
+
 body {
 }
+
+
 @mixin container($container, $gutter) {
 	width:$container;
 	margin:0 auto;
@@ -42,4 +57,28 @@ body {
 	 	-moz-box-sizing: border-box; 
 		-webkit-box-sizing: border-box; 
 		box-sizing: border-box;
+}
+
+@mixin sub_block_init($sn, $column, $n, $gutter) {
+	width:(($column * $n) + ($gutter * ($n - 1))) / $sn - ((($gutter * $sn) + $gutter) / $sn + 1);
+	float:left;
+	margin-top: $gutter / 2;
+	margin-bottom: $gutter / 2;
+	margin-left: $gutter;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	border:1px solid black;
+}
+
+@mixin sub_block_last_init($sn, $column, $n, $gutter) {
+	width:(($column * $n) + ($gutter * ($n - 1))) / $sn - ((($gutter * $sn) + $gutter) / $sn + 1);
+	float:left;
+	margin-top: $gutter / 2;
+	margin-bottom: $gutter / 2;
+	margin-left: $gutter;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	border:1px solid black;
 }
